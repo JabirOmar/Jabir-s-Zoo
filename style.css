@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #cdcdcd;
+    font-family: 'Poppins';
+}
+
+/* ------------------------------------------------------
+---------------- Navigation style starts ----------------
+---------------------------------------------------------*/
+ 
+ nav{
+   background-color: #cdcdcd;
+   width: 100%;
+   height: 10vh;
+   position: fixed;
+   top: 0;
+   display: flex;
+   justify-content: space-between;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ }
+
+/* ------------- Left Navigation style starts --------------*/
+
+ .left-nav{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  
+ }
+ #logo{
+  width: 40px;
+  margin-left: 5%;
+  background-color: #dcdcdc;
+  padding: 3px;
+  border-radius: 20%;
+ }
+
+ /* ------------- Middle Navigation style starts -------------- */
+
+ .middle-nav{
+  display: flex;
+  align-items: center;
+ }
+ .middle-nav ul{
+  display: flex;
+  list-style: none;
+  float: right;
+}
+.middle-nav ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px;
+  font-weight: 300;
+}
+.middle-nav ul li:nth-child(5){
+  display: none;
+}
+
+
+/* ------------- Right Navigation style starts -------------- */
+.right-nav{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#moon{
+  width: 30px;
+  background-color: #dcdcdc;
+  padding: 7px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#user{
+  width: 45px;
+  margin-right: 20px;
+}
+.menu-box{
+  cursor: pointer;
+  margin-right: 5%;
+  display: none;
+}
+.menu-box .bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin-top: 5px;
+}
+
+
+/* ------------------------------------------------------
+------------------- Hero style starts -------------------
+--------------------------------------------------------- */
+
+ .hero{
+  width: 100%;
+  height: 75vh;
+  background-image: url(./images/tiger-wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+ }
+
+ /* -----------------------------------------------------
+----------------- Welcoming style starts ----------------
+--------------------------------------------------------- */
+
+.welcoming{
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.welcoming h1 span{
+  color: green;
+}
+
+ /* -----------------------------------------------------
+------------------- Intro style starts ------------------
+--------------------------------------------------------- */
+
+.big-container{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro{
+  width: 300px;
+  height: 300px;
+  margin: 0 20px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.intro h2 span{
+  color: green;
+}
+
+
+/* ------------------------------------------------------
+-------------------- Ads style starts -------------------
+--------------------------------------------------------- */
+
+ .ads{
+  width: 100%;
+  height: 50vh;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/safari.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+ }
+ .ads h1 span{
+  color: green;
+ }
+
+
+/* ------------------------------------------------------
+----------------- Mammals style starts ------------------
+--------------------------------------------------------- */
+
+
+ .Animals-title-container{
+  height: 30vh;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .Animals-title{
+  width: 250px;
+  height: 80%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ }
+
+
+
+
+ .Animal-container{
+  width: 100%;
+  height: 50vh;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .Animal-window{
+  width: 90%;
+  height: 100%;
+  border-radius: 15px;
+  
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+ }
+ .Animal-window img{
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-right: 1px solid;
+ }
+ .Animal-window p{
+  width: 60%;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+ }
+
+
+
+
+
+
+/* ------------------------------------------------------
+---------------- Responsive style starts ----------------
+--------------------------------------------------------- */
+
+@media screen and (Max-width: 950px) {
+
+  .big-container{
+    height: 135vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .big-container .intro:nth-child(2){
+    margin: 50px 0;
+  }
+
+
+
+  .Animal-container{
+    height: 600px;
+  }
+  .Animal-window{
+    display: block;
+    width: 80%;
+  }
+  .Animal-window img{
+    width: 100%;
+    height: 50%;
+    border-right: 0;
+    border-bottom: 1px solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    background-color: antiquewhite;
+  }
+  .Animal-window p{
+    width: 0%;
+    height: 0%;
+  }
+}
+
+
+
+
+/* ----------------------------------
+------------- When Active -----------
+------------------------------------- */
+
+body.active{
+  background-color: rgb(0, 32, 33);
+  color: white;
+}
+nav.active{
+  background-color: rgb(0, 32, 33);
+}
+nav.active .middle-nav ul li a{
+  color: white;
+}
+.big-container.active .intro{
+  background-color: rgb(31, 46, 41);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (Max-width: 650px) {
+  #user{
+    display: none;
+  }
+  .menu-box{
+    display: block;
+    transition: 1s;
+  }
+  .menu-box.selected .bar{
+    background-color: #eee;
+  }
+  .menu-box.active .bar:nth-child(2){
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .menu-box.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    transition: all 0.5s;
+  } 
+  .menu-box.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(135deg);
+    transition: all 0.5s;
+  }
+  .middle-nav{
+    position: absolute;
+    top: 10vh;
+    height: 90vh;
+    width: 100%;
+    right: -100%;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    transition: 1.5s;
+  }
+  .middle-nav.active{
+    right: 0%;
+    transition: 1.5s;
+  }
+  .middle-nav ul{
+    display: block;
+    text-align: center;
+  }
+  .middle-nav ul li{
+    margin: 30px 0;
+  }
+  .middle-nav ul li a {
+    color: white;
+  }
+}
